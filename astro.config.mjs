@@ -6,10 +6,9 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  //site: 'lien github pages',
-
-  //base: 'Nom du repo',
-  trailingSlash: 'always', // 
+  site: 'https://jehryl.github.io',
+  base: 'jefftientcheu-portfolio',
+  trailingSlash: 'always',
 
   vite: {
       plugins: [tailwindcss()],
