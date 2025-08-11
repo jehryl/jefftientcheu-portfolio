@@ -1,6 +1,6 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
-//import tailwindcss from "@tailwindcss/vite";
+import tailwindcss from "@tailwindcss/vite";
 
 import react from "@astrojs/react";
 
@@ -18,7 +18,7 @@ export default defineConfig({
     : "https://jehryl.github.io",
   base: isVercel ? "/" : "/jefftientcheu-portfolio/",
 
-  // vite: {
-      // plugins: [tailwindcss()],
-  // },
+  vite: {
+      plugins: [tailwindcss()],
+  },
 });
